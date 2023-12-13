@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: 'Roboto Condensed';
-    src: url('/font/RobotoCondensed-VariableFont_wght.ttf');
+    src: url('/fonts/RobotoCondensed-VariableFont_wght.ttf');
 }
 nav {
     position: sticky;
@@ -14,7 +14,6 @@ nav {
     text-align: center;
     background: #fff;
     border-bottom: #7c2127 1px solid;
-
 }
 
 nav a {
@@ -23,24 +22,19 @@ nav a {
     padding: 8px 35px;
     text-transform: uppercase;
     display: inline-flex;
-
-
 }
 
 nav a:hover {
     color: #B8464D;
-
 }
 
 .logo-container {
     background-image: url('/img/header-bg.jpg');
     display: flex;
-
 }
 
 .logo {
     margin-left: 20px;
-
 }
 
 .title-container {
@@ -57,13 +51,9 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     margin-left: 30px;
-
-
 }
 
 .sub-title {
     font-size: 18px;
     line-height: 35px;
-    /* display: block; */
-
 }
