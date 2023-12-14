@@ -7,6 +7,15 @@
     font-family: 'Roboto Condensed';
     src: url('/fonts/RobotoCondensed-VariableFont_wght.ttf');
 }
+
+h2 {
+    color: #7c2127;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
 nav {
     position: sticky;
     top: 0;
@@ -58,6 +67,11 @@ nav a:hover {
     line-height: 35px;
 }
 
+.descript-container {
+    display: flex;
+
+}
+
 .flag-statue {
     width: 418px;
     height: 283px;
@@ -67,3 +81,26 @@ nav a:hover {
     background-repeat: no-repeat;
 
 }
+
+.text-descript {
+    max-width: 588px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 19px;
+    padding-top: 35px;
+
+}
+
+.present-list {
+    max-width: 1109px;
+    list-style-image: url('/img/list-style.png');
+
+}
+
+.present-list li {
+    padding-left: 15px;
+    padding-bottom: 35px;
+
+}
+
