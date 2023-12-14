@@ -57,3 +57,13 @@ nav a:hover {
     font-size: 18px;
     line-height: 35px;
 }
+
+.flag-statue {
+    width: 418px;
+    height: 283px;
+    display: flex;
+    justify-content: center;
+    background-image: url('/img/flag\ 1.png');
+    background-repeat: no-repeat;
+
+}
