@@ -184,13 +184,26 @@ nav a:hover {
 
 .contact-sci {
     border-left: 2px solid #7c2127;
-    padding-left: 33px;
+    padding-left: 40px;
 }
 
 b {
     display: flex;
     margin-top: 13px;
     margin-bottom: 7px;
+
+}
+
+.secret {
+    text-align: center;
+}
+
+.telephone {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 
 }
 
