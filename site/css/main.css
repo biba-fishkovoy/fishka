@@ -108,20 +108,22 @@ nav a:hover {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    column-gap: 65px;
+    row-gap: 25px;
 }
 
 .liter {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 0px 25px 0px 25px;
+    /* margin: 0px 25px 0px 25px; */
 }
 
 .science {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0px 40px 0px 40px;
+    /* margin: 0px 40px 0px 40px; */
 }
 
 .prizes {
@@ -129,12 +131,13 @@ nav a:hover {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    gap: 60px;
    
 
 }
 
 .prizes div {
-    margin: 0px 30px 30px 30px;
+    /* margin: 0px 30px 30px 30px; */
     display: flex;
     /* justify-content: center; */
     align-items: center;
@@ -148,3 +151,68 @@ nav a:hover {
 
 }
 
+.contact-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.contact-text {
+    display: flex;
+    flex-direction: row;
+    /* flex-direction: column; */
+    /* gap: 50px; */
+    /* column-rule: 10px solid #7c2127; */
+    column-gap: 50px;
+    column-rule: 10px solid #7c2127;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* row-gap: 50px; */
+
+}
+
+.contact-text p {
+    display: flex;
+    /* flex-direction: row; */
+    margin-top: 0px;
+    align-items: center;
+    flex-direction: column;
+    /* border-left: 1px solid #7c2127; */
+}
+
+.contact-sci {
+    border-left: 2px solid #7c2127;
+    padding-left: 33px;
+}
+
+b {
+    display: flex;
+    margin-top: 13px;
+    margin-bottom: 7px;
+
+}
+
+@media screen and (max-width: 646px) {
+    .contact-text p {
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .contact-sci::before {
+        border:1px solid #7c2127;
+        flex-direction: column;
+        content: "";
+        align-self: stretch;
+        margin-right: 0px;
+    }
+
+    .contact-sci {
+        margin-top: 0px;
+        border: none;
+        margin: 0;
+        padding: 0;
+
+    }
+}
