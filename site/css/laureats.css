@@ -1,10 +1,10 @@
 a img {
-    margin-left: 20px;
-} 
+  margin-left: 20px;
+}
 
 a {
-    text-decoration:none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 a:visited {
@@ -12,57 +12,133 @@ a:visited {
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: center; */
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .laureats-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-top: 10px;
-    justify-content: center;
-}
-
-.laureat:last-of-type { 
-    /* margin-right: auto; */
-    /* display: flex; */
-    align-self: flex-end;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  justify-content: center;
 }
 
 .laureat {
-    width: 380px;
-    height: 300px;
-    border: 1px;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    padding: 10px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+  width: 380px;
+  height: 300px;
+  border: 1px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
 }
 
-.nomination { 
-    color: rgb(110, 59, 59);
-    font-size: medium;
-    text-transform: uppercase;
-    font-weight: bold;
-    /* width: 400px; */
+.laureat:hover {
+  box-shadow: 0px 0px 7px rgba(105, 27, 27, 0.6);
+  cursor: pointer;
+}
+
+.nomination {
+  color: rgb(110, 59, 59);
+  font-size: medium;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .laureat-img {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    /* margin-left: auto; */
-    /* margin-right: auto; */
-    height: 210px;
-    width: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 210px;
+  width: auto;
 }
 
 .laureat-name {
-    font-size: 13pt;
-    width: 320px;
+  font-size: 12pt;
+  width: 320px;
+}
+
+.modal {
+  display: flex;
+  padding: 10px 10px 10px 10px;
+  flex-direction: column;
+  align-items: center;
+
+  z-index: 1;
+  position: fixed;
+  /* width: 60%; */
+  /* height: 60%; */
+  height: fit-content;
+  width: fit-content;
+  /* min-width: 300px; */
+
+  border-radius: 3px;
+  border: 2px;
+  border-color: #242424;
+  box-shadow: 0px 0px 7px rgba(7, 7, 7, 0.6);
+
+  background-color: #ffffff;
+  visibility: hidden;
+  opacity: 0;
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal .laureat-header {
+  flex-direction: row;
+}
+
+.modal .description {
+  margin-top: 20px;
+  width: 90%;
+}
+
+.modal .photos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.modal .photos img {
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.open {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.4s;
+}
+
+.background {
+  pointer-events: none;
+  filter: blur(2px) saturate(0.1);
+  overflow: hidden;
+  height: 100%;
+  transition: 0.3s;
+}
+
+.body-overlay {
+  /* background: #242424; */
+}
+
+.modal .btn-close {
+  background: url("/img/cross.png");
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  border: none;
+  filter: contrast(0.1);
+  margin-left: auto;
+}
+
+.modal .btn-close:hover {
+  filter: contrast(1);
+  transition: 0.3s;
 }

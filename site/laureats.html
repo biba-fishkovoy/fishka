@@ -1,152 +1,208 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Премия Росгвардии</title>
-    <link href="/css/main.css" rel="stylesheet">
-    <link href="/css/laureats.css" rel="stylesheet">
-  </head>
 
-  <body>
-    <header>
-      <div class="logo-container">
-        <div class="title-container">
-          <img class="logo" src="/img/logo-white.png" width="127" height="120" alt="Герб Росгвардии">
-          <div class="title">
-            Конкурс на соискание премий Росгвардии<br>
-            <!-- В области литературы и искусства, в области науки и техники -->
-            <span class="sub-title">В области литературы и искусства, в области науки и техники</span>
-          </div> 
+<head>
+  <meta charset="UTF-8">
+  <title>Премия Росгвардии</title>
+  <link href="/css/main.css" rel="stylesheet">
+  <link href="/css/laureats.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="logo-container">
+      <div class="title-container">
+        <img class="logo" src="/img/logo-white.png" width="127" height="120" alt="Герб Росгвардии">
+        <div class="title">
+          Конкурс на соискание премий Росгвардии<br>
+          <span class="sub-title">В области литературы и искусства, в области науки и техники</span>
         </div>
       </div>
-    </header>
-    <nav>
-      <a href="/main.html">Общие сведения</a>
-      <a href="/laureats.html">Лауреаты</a>
-      <a href="#n3">Порядок рассмотрения работ</a>
-      <a href="/docs.html">Образцы документов</a>
-      <a href="#n5">Справочная информация</a>
-    </nav>
+    </div>
+  </header>
+  <nav>
+    <a href="/main.html">Общие сведения</a>
+    <a href="/laureats.html">Лауреаты</a>
+    <a href="#n3">Порядок рассмотрения работ</a>
+    <a href="/docs.html">Образцы документов</a>
+    <a href="#n5">Справочная информация</a>
+  </nav>
 
-    <main>
-        <h2 style="margin-top: 30px;">Лауреаты 2020</h2>
-        <div class="laureats-container">
-            <div class="laureat">
-                <div class="nomination">
-                    Наука
-                </div>
-                <img class="laureat-img" src="/img/laureats/baranov-2.jpg">
-                <div class="laureat-name">
-                    Генерал-полковник в отставке Баранов В.П.
-                </div>
-            </div>
-            
-            <div class="laureat">
-                <div class="nomination">
-                    Наука и техника
-                </div>
-                <img class="laureat-img" src="/img/laureats/gvkg.jpg">
-                <div class="laureat-name">
-                    Коллектив ГВКГ войск национальной гвардии
-                </div>
-            </div>
-    
-            <div class="laureat">
-                <div class="nomination">
-                    Литература и искусство
-                </div>
-                <img class="laureat-img" src="/img/laureats/palukh-1.jpg">
-                <div class="laureat-name">
-                    Коллектив редакции журнала "На боевом посту"
-                </div>
-            </div>
+  <main id="container">
+    <h2 style="margin-top: 30px;">Лауреаты 2020</h2>
+    <div class="laureats-container">
+      <div class="laureat" id="baranov_2020" onclick="previewClickHandler('modal_baranov_2020')">
+        <div class="nomination">
+          Наука
         </div>
-
-        <h2 style="margin-top: 30px;">Лауреаты 2021</h2>
-        <div class="laureats-container">
-            <div class="laureat">
-                <div class="nomination">
-                    Наука
-                </div>
-                <img class="laureat-img" src="/img/laureats/palukh-1.jpg">
-                <div class="laureat-name">
-                    полковник Милашенко С.Н., полковник Палюх А.И.
-                </div>
-            </div>
-            
-            <div class="laureat">
-                <div class="nomination">
-                    Наука и техника
-                </div>
-                <img class="laureat-img" src="/img/laureats/gvk-5.jpg">
-                <div class="laureat-name">
-                    Коллектив 5-го военного клинического госпиталя войск национальной гвардии
-                </div>
-            </div>
-    
-            <div class="laureat">
-                <div class="nomination">
-                    Литература и искусство
-                </div>
-                <img class="laureat-img" src="/img/laureats/journale-heads.jpg">
-                <div class="laureat-name">
-                    Коллектив редакции журнала "На боевом посту"
-                </div>
-            </div>
-            <div class="laureat">
-                <div class="nomination">
-                    Литература и искусство
-                </div>
-                <img class="laureat-img" src="/img/laureats/maidanov.jpg">
-                <div class="laureat-name">
-                    Заслуженный артист Российской Федерации Майданов Д.В.
-                </div>
-            </div>
+        <img class="laureat-img" src="/img/laureats/baranov-2.jpg">
+        <div class="laureat-name">
+          Генерал-полковник в отставке Баранов В.П.
         </div>
+      </div>
 
-        <h2 style="margin-top: 30px;">Лауреаты 2022</h2>
-        <div class="laureats-container">
-            <div class="laureat">
-                <div class="nomination">
-                    Наука
-                </div>
-                <img class="laureat-img" src="/img/laureats/obelchak.png">
-                <div class="laureat-name">
-                    Заслуженный врач Российской Федерации Обельчак И.С.
-                </div>
-            </div>
-            
-            <div class="laureat">
-                <div class="nomination">
-                    Наука и техника
-                </div>
-                <img class="laureat-img" src="/img/laureats/obelchak.png">
-                <div class="laureat-name">
-                    Коллектив ФГКОУ...
-                </div>
-            </div>
-    
-            <div class="laureat">
-                <div class="nomination">
-                    Литература и искусство
-                </div>
-                <img class="laureat-img" src="/img/laureats/obelchak.png">
-                <div class="laureat-name">
-                    Климов А.А. и Козлов А.В. - коллектив союза писателей России
-                </div>
-            </div>
-            <div class="laureat">
-                <div class="nomination">
-                    Литература и искусство
-                </div>
-                <img class="laureat-img" src="/img/laureats/obelchak.png">
-                <div class="laureat-name">
-                    Заслуженный артист России, артист ансамбля песни и пляски...
-                </div>
-            </div>
+      <div class="laureat" id="gvkg_2020" onclick="previewClickHandler('modal_gvkg_2020')">
+        <div class="nomination">
+          Наука и техника
         </div>
+        <img class="laureat-img" src="/img/laureats/gvkg.jpg">
+        <div class="laureat-name">
+          Коллектив ГВКГ войск национальной гвардии
+        </div>
+      </div>
 
-    </main>
+      <div class="laureat" id="journal_2020" onclick="previewClickHandler('modal_journal_2020')">
+        <div class="nomination">
+          Литература и искусство
+        </div>
+        <img class="laureat-img" src="/img/laureats/palukh-1.jpg">
+        <div class="laureat-name">
+          Коллектив редакции журнала «На боевом посту»
+        </div>
+      </div>
+    </div>
 
+    <h2 style="margin-top: 30px;">Лауреаты 2021</h2>
+    <div class="laureats-container">
+      <div class="laureat">
+        <div class="nomination">
+          Наука
+        </div>
+        <img class="laureat-img" src="/img/laureats/palukh-1.jpg">
+        <div class="laureat-name">
+          полковник Милашенко С.Н., полковник Палюх А.И.
+        </div>
+      </div>
+
+      <div class="laureat">
+        <div class="nomination">
+          Наука и техника
+        </div>
+        <img class="laureat-img" src="/img/laureats/gvk-5.jpg">
+        <div class="laureat-name">
+          Коллектив 5-го военного клинического госпиталя войск национальной гвардии
+        </div>
+      </div>
+
+      <div class="laureat">
+        <div class="nomination">
+          Литература и искусство
+        </div>
+        <img class="laureat-img" src="/img/laureats/journale-heads.jpg">
+        <div class="laureat-name">
+          Коллектив редакции журнала "На боевом посту"
+        </div>
+      </div>
+      <div class="laureat">
+        <div class="nomination">
+          Литература и искусство
+        </div>
+        <img class="laureat-img" src="/img/laureats/maidanov.jpg">
+        <div class="laureat-name">
+          Заслуженный артист Российской Федерации Майданов Д.В.
+        </div>
+      </div>
+    </div>
+
+    <h2 style="margin-top: 30px;">Лауреаты 2022</h2>
+    <div class="laureats-container">
+      <div class="laureat">
+        <div class="nomination">
+          Наука
+        </div>
+        <img class="laureat-img" src="/img/laureats/obelchak.png">
+        <div class="laureat-name">
+          Заслуженный врач Российской Федерации Обельчак И.С.
+        </div>
+      </div>
+
+      <div class="laureat">
+        <div class="nomination">
+          Наука и техника
+        </div>
+        <img class="laureat-img" src="/img/laureats/obelchak.png">
+        <div class="laureat-name">
+          Коллектив ФГКОУ...
+        </div>
+      </div>
+
+      <div class="laureat">
+        <div class="nomination">
+          Литература и искусство
+        </div>
+        <img class="laureat-img" src="/img/laureats/klimov-kozlov.jpg">
+        <div class="laureat-name">
+          Климов А.А. и Козлов А.В. - коллектив союза писателей России
+        </div>
+      </div>
+      <div class="laureat">
+        <div class="nomination">
+          Литература и искусство
+        </div>
+        <img class="laureat-img" src="/img/laureats/dorovskyh.jpg">
+        <div class="laureat-name">
+          Заслуженный артист России, артист ансамбля песни и пляски «Гарнизонный дом офицеров «Реутово»» Доровских А.Н.
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Модальные окна -->
+  <div class="modal" id="modal_baranov_2020">
+    <button class="btn-close" style="margin-left: auto;" onclick="toggleModal('modal_baranov_2020')"></button>
+    <h3 style="margin-top: 0px;">Лауреат 2020 года в номинации «Наука» генерал-полковник в отставке Баранов В.П.</h3>
+    <div class="photos">
+      <img src="/img/laureats/baranov-2.jpg" width="400px" height="auto">
+      <img src="/img/laureats/baranov-1.jpg" width="auto" height="287px">
+    </div>
+    <div class="description">
+      <p>Награжден за комплексный коммуникационный проект «Руководители и Герои Росгвардии»</p>
+      <p>Главный научный сотрудник Главного центра научных исследований Росгвардии;</p>
+      <p>доктор исторических наук, кандидат военных наук, профессор;</p>
+      <p>вице-президент академии военных наук</p>
+      <p>действительный член Российской академии естественных наук и Международной академии исторических и социальных
+        наук;</p>
+      <p>генеральный инспектор министерства Обороны Российской Федерации;</p>
+      <p>кавалер ордена Кадырова.</p>
+    </div>
+  </div>
+  <div class="modal" id="modal_gvkg_2020">
+    <button class="btn-close" style="margin-left: auto;" onclick="toggleModal('modal_gvkg_2020')"></button>
+    <h3 style="margin-top: 0px;">Лауреат 2020 года в номинации «Наука и техника» коллектив ГВКГ войск национальной гвардии </h3>
+    <div class="photos">
+      <img src="/img/laureats/gvkg.jpg" width="400px" height="auto">
+    </div>
+    <div class="description">
+      <p>За разработку системы лечения ран в собственной жидкой среде и медицинских изделий для ее осуществления, коллектив ГВКГ войск национальной гвардии в составе:</p>
+      <ul>
+        <li>заслуженного врача Российской Федерации, кандидата медицинских наук ведущего врача-хирурга группы ведущих специалистов полковника медицинской службы Ковалева Александра Сергеевича;</li>
+        <li>кандидата медицинских наук, старшего врача-хирурга приемного отделения Мензула Василия Александровича;</li>
+        <li>начальника отделения гнойной хирургии и ожогового  – врача-хирурга Пильникова Сергея Александровича (посмертно).</li>
+      </ul>
+    </div>
+  </div>
+  <div class="modal" id="modal_journal_2020">
+    <button class="btn-close" style="margin-left: auto;" onclick="toggleModal('modal_journal_2020')"></button>
+    <h3 style="margin-top: 0px;">Лауреат 2020 года в номинации «Литература и искусство» коллектив редакции журнала «На боевом посту»</h3>
+    <div class="photos">
+      <img src="/img/laureats/journale-heads.jpg" width="500px" height="auto">
+    </div>
+    <div class="description">
+      <p>За подготовку и выпуск трилогии документальных фильмов «Легендарные полководцы войск правопорядка» («Забытые истории Евграфа Комаровского»), «Генерал армии Яковлев. Легенда Росгвардии», «Непобежденный. Герой Российской Федерации Анатолий Романов», коллектив Редакции журнала «На боевом посту» войск национальной гвардии в составе:  </p>
+      <ul>
+        <li>главного редактора, члена союза журналистов России полковника Болтикова Виктора Владимировича;</li>
+        <li>научного редактора группы документально-публицистических фильмов отдела киностудии майора Безденежных Артема Игоревича; </li>
+        <li>начальника группы документально-публицистических фильмов отдела киностудии майора Романенко Алексея Юрьевича; </li>
+        <li>начальника группы инфографики отдела киностудии майора Серова Евгения Юрьевича; </li>
+        <li>старшего  корреспондента телевизионно-технической группы отдела киностудии старшего лейтенанта Петрова Александра Владимировича;</li>
+        <li>старшего техника группы документально-публицистических фильмов отдела киностудии старшего прапорщика Кравчака Сергея Николаевича.</li>
+      </ul>
+    </div>
+  </div>
+
+  
+
+  <script src="/js/modal.js" type="text/javascript"></script>
 </body>
+
 </html>
