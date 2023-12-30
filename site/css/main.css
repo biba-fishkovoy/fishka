@@ -187,7 +187,7 @@ nav a:hover {
     padding-left: 40px;
 }
 
-b {
+.contact-text b {
     display: flex;
     margin-top: 13px;
     margin-bottom: 7px;
