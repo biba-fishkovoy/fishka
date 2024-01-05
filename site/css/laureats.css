@@ -70,11 +70,6 @@ main {
 
   z-index: 1;
   position: fixed;
-  /* width: 60%; */
-  /* height: 60%; */
-  height: fit-content;
-  width: fit-content;
-  /* min-width: 300px; */
 
   border-radius: 3px;
   border: 2px;
@@ -88,7 +83,13 @@ main {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+
+  width: 60%;
+  min-height: auto;
+  max-height: 80%;
+  overflow: auto;
 }
+
 
 .modal .laureat-header {
   flex-direction: row;
@@ -138,6 +139,7 @@ main {
 
 .body-overlay {
   /* background: #242424; */
+  overflow: hidden;
 }
 
 .modal .btn-close {

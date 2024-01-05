@@ -8,7 +8,8 @@ function toggleModal(id) {
   isModalOpen = modal.classList.toggle('open');
   mainContainer.classList.toggle('background');
 
-  // document.body.classList.toggle('body-overlay');
+  // document.getElementsByTagName('main').toggle('body-overlay');
+  document.body.classList.toggle('body-overlay');
 }
 
 function previewClickHandler(id) {
