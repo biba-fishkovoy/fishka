@@ -59,6 +59,7 @@ main {
 .laureat-name {
   font-size: 12pt;
   width: 320px;
+  text-align: justify;
 }
 
 .modal {
@@ -96,6 +97,17 @@ main {
 .modal .description {
   margin-top: 20px;
   width: 90%;
+  text-align: justify;
+}
+
+.modal h3 {
+  text-align: justify;
+  width: 90%;
+}
+
+.modal .description ul li {
+  font-size: 16px;
+  margin-bottom: 5px;
 }
 
 .modal .photos {
@@ -141,4 +153,5 @@ main {
 .modal .btn-close:hover {
   filter: contrast(1);
   transition: 0.3s;
+  cursor: pointer;
 }
