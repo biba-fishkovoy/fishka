@@ -1,0 +1,159 @@
+a img {
+  margin-left: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: rgb(119, 96, 96);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.laureats-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  justify-content: center;
+}
+
+.laureat {
+  width: 380px;
+  height: 300px;
+  border: 1px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.laureat:hover {
+  box-shadow: 0px 0px 7px rgba(105, 27, 27, 0.6);
+  cursor: pointer;
+}
+
+.nomination {
+  color: rgb(110, 59, 59);
+  font-size: medium;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.laureat-img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 210px;
+  width: auto;
+}
+
+.laureat-name {
+  font-size: 12pt;
+  width: 320px;
+  text-align: justify;
+}
+
+.modal {
+  display: flex;
+  padding: 10px 10px 10px 10px;
+  flex-direction: column;
+  align-items: center;
+
+  z-index: 1;
+  position: fixed;
+
+  border-radius: 3px;
+  border: 2px;
+  border-color: #242424;
+  box-shadow: 0px 0px 7px rgba(7, 7, 7, 0.6);
+
+  background-color: #ffffff;
+  visibility: hidden;
+  opacity: 0;
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 60%;
+  min-height: auto;
+  max-height: 80%;
+  overflow: auto;
+}
+
+
+.modal .laureat-header {
+  flex-direction: row;
+}
+
+.modal .description {
+  margin-top: 20px;
+  width: 90%;
+  text-align: justify;
+}
+
+.modal h3 {
+  text-align: justify;
+  width: 90%;
+}
+
+.modal .description ul li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.modal .photos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.modal .photos img {
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.open {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.4s;
+}
+
+.background {
+  pointer-events: none;
+  filter: blur(2px) saturate(0.1);
+  overflow: hidden;
+  height: 100%;
+  transition: 0.3s;
+}
+
+.body-overlay {
+  /* background: #242424; */
+  overflow: hidden;
+}
+
+.modal .btn-close {
+  background: url("/img/cross.png");
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  border: none;
+  filter: contrast(0.1);
+  margin-left: auto;
+}
+
+.modal .btn-close:hover {
+  filter: contrast(1);
+  transition: 0.3s;
+  cursor: pointer;
+}

@@ -67,9 +67,17 @@ nav a:hover {
     line-height: 35px;
 }
 
+h2 { 
+    text-transform: uppercase;
+    color: #7c2127;
+}
+
+p {
+    margin: 5px;
+    font-size: 16px;
+
 .descript-container {
     display: flex;
-
 }
 
 .flag-statue {
@@ -79,7 +87,6 @@ nav a:hover {
     justify-content: center;
     background-image: url('/img/flag\ 1.png');
     background-repeat: no-repeat;
-
 }
 
 .text-descript {
@@ -89,19 +96,16 @@ nav a:hover {
     text-align: center;
     font-size: 19px;
     padding-top: 35px;
-
 }
 
 .present-list {
     max-width: 1109px;
     list-style-image: url('/img/list-style.png');
-
 }
 
 .present-list li {
     padding-left: 15px;
     padding-bottom: 35px;
-
 }
 
 .images-premia {
@@ -132,8 +136,6 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     gap: 60px;
-   
-
 }
 
 .prizes div {
@@ -141,14 +143,12 @@ nav a:hover {
     display: flex;
     /* justify-content: center; */
     align-items: center;
-
 }
 
 .prizes p {
     text-align: center;
     font-size: 16px;
     margin: 16px;
-
 }
 
 .contact-container {
@@ -156,7 +156,6 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .contact-text {
@@ -170,7 +169,6 @@ nav a:hover {
     justify-content: center;
     flex-wrap: wrap;
     /* row-gap: 50px; */
-
 }
 
 .contact-text p {
@@ -191,7 +189,6 @@ nav a:hover {
     display: flex;
     margin-top: 13px;
     margin-bottom: 7px;
-
 }
 
 .secret {
@@ -204,7 +201,6 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     gap: 8px;
-
 }
 
 @media screen and (max-width: 646px) {
