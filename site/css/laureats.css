@@ -8,7 +8,7 @@ a {
 }
 
 a:visited {
-  color: rgb(119, 96, 96);
+  color: #000;
 }
 
 main {
@@ -33,7 +33,8 @@ main {
   display: flex;
   flex-direction: column;
   margin: 10px;
-  padding: 10px;
+  /* padding-top: 10px; */
+  padding: 15px 5px 0px 5px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
 }
 
@@ -68,7 +69,7 @@ main {
   flex-direction: column;
   align-items: center;
 
-  z-index: 1;
+  z-index: 3;
   position: fixed;
 
   border-radius: 3px;
@@ -88,6 +89,9 @@ main {
   min-height: auto;
   max-height: 80%;
   overflow: auto;
+
+  opacity: 0.4;
+  transition: 0.2s;
 }
 
 
@@ -129,31 +133,42 @@ main {
   transition: 0.4s;
 }
 
+.btn-close-modal {
+  visibility: hidden;
+  z-index: 2;
+  position: fixed;
+  top: 5%;
+  left: 95%;
+  background: url("/img/cross-white.png");
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  border: none;
+
+  transform: rotate(0deg) scale(0.8);
+  transition: 0.3s;
+}
+
+.btn-close-modal:hover {
+  transform: rotate(90deg) scale(1);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
 .background {
   pointer-events: none;
-  filter: blur(2px) saturate(0.1);
-  overflow: hidden;
+  filter: blur(2px) saturate(0);
   height: 100%;
   transition: 0.3s;
 }
 
-.body-overlay {
-  /* background: #242424; */
-  overflow: hidden;
-}
-
-.modal .btn-close {
-  background: url("/img/cross.png");
-  background-size: contain;
-  width: 25px;
-  height: 25px;
-  border: none;
-  filter: contrast(0.1);
-  margin-left: auto;
-}
-
-.modal .btn-close:hover {
-  filter: contrast(1);
-  transition: 0.3s;
-  cursor: pointer;
-}

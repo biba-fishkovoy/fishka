@@ -17,6 +17,7 @@ h2 {
 }
 
 nav {
+    z-index: 2;
     position: sticky;
     top: 0;
     width: 100%;
@@ -37,13 +38,15 @@ nav a:hover {
     color: #B8464D;
 }
 
+
 .logo-container {
     background-image: url('/img/header-bg.jpg');
     display: flex;
+    height: 140px;
 }
 
 .logo {
-    margin-left: 20px;
+    margin-left: 50px;
 }
 
 .title-container {
