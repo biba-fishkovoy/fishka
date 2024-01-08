@@ -109,11 +109,12 @@
 
 .contact-text b {
   display: flex;
-  margin-top: 13px;
+  /* margin-top: 13px; */
   margin-bottom: 7px;
 }
 
 .secret {
+  margin-top: 20px;
   text-align: center;
 }
 
