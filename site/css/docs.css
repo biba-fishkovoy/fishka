@@ -33,6 +33,7 @@ main {
   background-repeat: no-repeat;
   flex-shrink: 0;
   justify-content: center;
+  transition: all linear 0.2s;
 }
 
 .doc_item:hover {
@@ -40,15 +41,16 @@ main {
 }
 
 .doc_item:hover .image {
-  width: 40px;
-  height: 40px;
+  width: 37px;
+  height: 35px;
   margin-left: 20px;
   background-image: url('/img/pdf-download.png');
   background-size: contain;
   background-repeat: no-repeat;
   flex-shrink: 0;
   justify-content: center;
-  transition: 0.2s;
+
+  transition: all linear 0.2s;
 }
 
 
