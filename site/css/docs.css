@@ -24,6 +24,18 @@ main {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
 
+.doc_item_main {
+  display: flex;
+  align-items: center;
+  width: 770px;
+  height: 60px;
+  background-color: rgb(255, 255, 255);
+  margin: 15px;
+  padding: 20px;
+  padding-left: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
 .image {
   width: 40px;
   height: 50px;
@@ -40,7 +52,24 @@ main {
   box-shadow: 0 0px 7px rgba(88, 24, 24, 0.6);
 }
 
+.doc_item_main:hover {
+  box-shadow: 0 0px 7px rgba(88, 24, 24, 0.6);
+}
+
 .doc_item:hover .image {
+  width: 37px;
+  height: 35px;
+  margin-left: 20px;
+  background-image: url('/img/pdf-download.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+  justify-content: center;
+
+  transition: all linear 0.2s;
+}
+
+.doc_item_main:hover .image {
   width: 37px;
   height: 35px;
   margin-left: 20px;
@@ -64,12 +93,32 @@ main {
   text-align: justify;
 }
 
+.doc_download_main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 770px;
+  height: 100px;
+  margin-left: -20px;
+  align-items: center;
+  text-align: justify;
+  font-size: 20px;
+}
+
 .text {
   font-size: 16px;
   text-align: left;
   margin-left: 20px;
   margin-right: 20px;
 }
+
+.text_main {
+  font-size: 20px;
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 
 a img {
   margin-left: 20px;
