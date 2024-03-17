@@ -58,13 +58,30 @@
     margin-left: -28px;
 }
 
-.vertical-line {
+.vertical-line1 {
+    position: absolute;
+    top: 83%;
+   left: 27.48%;
     border: 1px solid #7c2127;
-    height: 100px;
+    height: 200px;
     width: 0px;
     margin-right: 15px;
     /* display: flex; */
     margin:20px;
+    display: flex;
+}
+
+.vertical-line2 {
+    position: absolute;
+    top: 126%;
+   left: 27.48%;
+    border: 1px solid #7c2127;
+    height: 200px;
+    width: 0px;
+    margin-right: 15px;
+    /* display: flex; */
+    margin:20px;
+    display: flex;
 }
 
 .gear-comission {
@@ -165,6 +182,7 @@
     align-items: center;
     flex-wrap: wrap;
     text-align: justify;
+    max-width: 990px;
     
 }
 
@@ -179,7 +197,11 @@
 }
 
 .text-stage3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: justify;
+    max-width: 1000px;
 }
 /* .jimmy-neutron:after {
     content: "";
