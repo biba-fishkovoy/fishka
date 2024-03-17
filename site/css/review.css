@@ -1,0 +1,193 @@
+.main-review {
+    display: flex;
+
+}
+
+.text-review {
+    font-size: 19px;
+}
+
+.lc {
+    margin-top: 30px;
+    font-size: 24px;
+    font-style: italic;
+    color: #7c2127;
+    font-weight: bold;
+    text-align: center;
+}
+
+.lih2 {
+    margin-top: 30px;
+    color: #7c2127;
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: -70px;
+}
+
+.stage1-contain {
+    display: flex;
+    flex-direction: column;
+}
+
+.science-commission {
+    display: flex;
+    align-items: center;
+}
+
+.science-commission img {
+    margin-top: 70px;
+}
+
+.line{
+    border: 1px solid #7c2127;
+    width: 60px;
+    margin-right: 15px;
+    display: flex;
+}
+
+.jimmy-neutron {
+    text-align: center;
+    width: [width of img];
+}
+
+.jimmy-neutron img {
+    display: flex;
+    margin: 0 auto;
+    margin-right: -28px;
+    margin-left: -28px;
+}
+
+.vertical-line {
+    border: 1px solid #7c2127;
+    height: 100px;
+    width: 0px;
+    margin-right: 15px;
+    /* display: flex; */
+    margin:20px;
+}
+
+.gear-comission {
+    /* margin-top: 30px; */
+    display: flex;
+    align-items: center;
+}
+
+.gear-comission img {
+    margin-top: 80px;
+}
+
+.line-gear{
+    border: 1px solid #7c2127;
+    width: 60px;
+    margin-right: 15px;
+    display: flex;
+}
+
+.gear {
+    text-align: center;
+    width: [width of img];
+    margin-right: -1px;
+}
+
+.gear img {
+    display: flex;
+    margin: 0 auto;
+    /* margin-right: -28px; */
+    /* margin-left: -28px; */
+}
+
+.lit-comission {
+    /* margin-top: 30px; */
+    display: flex;
+    align-items: center;
+    
+}
+
+.lit-comission img {
+    margin-top: 80px;
+}
+
+.line-lit{
+    border: 1px solid #7c2127;
+    width: 60px;
+    margin-right: 15px;
+    display: flex;
+}
+
+.liter {
+    /* text-align: center; */
+    width: [width of img];
+    /* margin-right: 12px; */
+    /* display: flex; */
+    margin-top: -75px;
+    margin-left: 20px;
+    margin-right: -12px;
+}
+
+.liter img {
+    display: flex;
+    /* margin: 0 auto; */
+    margin-bottom: 10px;
+    margin-right: -10px;
+    /* margin-right: -28px; */
+    /* margin-left: -28px; */
+}
+
+.stage2-contain {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    flex-wrap: wrap;
+}
+
+.stage2-lih2 {
+    margin-top: 30px;
+    color: #7c2127;
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    /* margin-bottom: -70px; */
+}
+
+.stage2-img {
+    display: flex;
+    /* row-gap: 20px; */
+    justify-content: space-between;
+    align-items: normal;
+    margin-left: 55px;
+
+}
+
+.stage3-contain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: justify;
+    
+}
+
+.stage3-lih2 {
+    margin-top: 30px;
+    color: #7c2127;
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    width: fit-content;
+    /* margin-bottom: -70px; */
+}
+
+.text-stage3 {
+    text-align: justify;
+}
+/* .jimmy-neutron:after {
+    content: "";
+    display: inline-block;
+    height: 2px;
+    vertical-align: bottom;
+    width: 10px;
+    margin-right: -100%;
+    margin-left: 10px;
+    border-top: 1px solid black;
+} */

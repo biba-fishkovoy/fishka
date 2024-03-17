@@ -3,6 +3,8 @@
   font-size: 19px;
 }
 
+
+
 @font-face {
   font-family: 'Roboto Condensed';
   src: url('/fonts/RobotoCondensed-VariableFont_wght.ttf');
@@ -15,6 +17,7 @@ h2 {
   font-size: 20px;
   text-align: center;
 }
+
 
 nav {
   z-index: 2;
