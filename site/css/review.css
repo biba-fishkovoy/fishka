@@ -22,21 +22,24 @@
     font-weight: bold;
     text-align: center;
     font-size: 22px;
-    margin-bottom: -70px;
 }
 
 .stage1-contain {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
-.science-commission {
+.icons-container {
     display: flex;
     align-items: center;
+    flex-direction: column;
+    /* justify-content: center; */
+    margin-right: -20px;
 }
 
-.science-commission img {
-    margin-top: 70px;
+.comission-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .line{
@@ -44,54 +47,77 @@
     width: 60px;
     margin-right: 15px;
     display: flex;
+    height: 0px;
+    /* align-items: center; */
+}
+
+.vertical-line1{
+    border: 1px solid #7c2127;
+    height: 170px;
+    /* margin-right: 15px; */
+    display: flex;
+    margin-left: -47px;
+}
+
+.vertical-line2{
+    border: 1px solid #7c2127;
+    height: 170px;
+    /* margin-right: 15px; */
+    display: flex;
+    margin-left: -47px;
+    
+}
+
+.science-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
 }
 
 .jimmy-neutron {
     text-align: center;
     width: [width of img];
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-right: -35px;
+}
+
+.jimmy-line {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    margin-right: 12px;
+}
+
+.gear-line {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.liter-line {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    margin-right: -15px;
+    margin-left: 18px;
+    margin-top: -10px;
 }
 
 .jimmy-neutron img {
     display: flex;
     margin: 0 auto;
-    margin-right: -28px;
-    margin-left: -28px;
-}
-
-.vertical-line1 {
-    position: absolute;
-    top: 105%;
-   left: 21.78%;
-    border: 1px solid #7c2127;
-    height: 200px;
-    width: 0px;
-    margin-right: 15px;
-    /* display: flex; */
-    margin:20px;
-    display: flex;
-}
-
-.vertical-line2 {
-    position: absolute;
-    top: 156%;
-   left: 21.78%;
-    border: 1px solid #7c2127;
-    height: 200px;
-    width: 0px;
-    margin-right: 15px;
-    /* display: flex; */
-    margin:20px;
-    display: flex;
 }
 
 .gear-comission {
-    /* margin-top: 30px; */
     display: flex;
     align-items: center;
-}
-
-.gear-comission img {
-    margin-top: 80px;
+    margin-bottom: 15px;
 }
 
 .line-gear{
@@ -104,25 +130,19 @@
 .gear {
     text-align: center;
     width: [width of img];
-    margin-right: -1px;
+    margin-right: -16px;
+    margin-left: 18px;
 }
 
 .gear img {
     display: flex;
-    margin: 0 auto;
-    /* margin-right: -28px; */
-    /* margin-left: -28px; */
 }
 
 .lit-comission {
-    /* margin-top: 30px; */
     display: flex;
     align-items: center;
+    /* margin-top: 35px; */
     
-}
-
-.lit-comission img {
-    margin-top: 80px;
 }
 
 .line-lit{
@@ -133,28 +153,17 @@
 }
 
 .liter {
-    /* text-align: center; */
     width: [width of img];
-    /* margin-right: 12px; */
-    /* display: flex; */
-    margin-top: -75px;
-    margin-left: 20px;
-    margin-right: -12px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-right: -35px;
 }
 
-.liter img {
-    display: flex;
-    /* margin: 0 auto; */
-    margin-bottom: 10px;
-    margin-right: -10px;
-    /* margin-right: -28px; */
-    /* margin-left: -28px; */
-}
 
 .stage2-contain {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     flex-wrap: wrap;
 }
 
@@ -164,12 +173,10 @@
     font-weight: bold;
     text-align: center;
     font-size: 22px;
-    /* margin-bottom: -70px; */
 }
 
 .stage2-img {
     display: flex;
-    /* row-gap: 20px; */
     justify-content: space-between;
     align-items: normal;
     margin-left: 55px;
@@ -194,7 +201,6 @@
     text-align: center;
     font-size: 22px;
     width: fit-content;
-    /* margin-bottom: -70px; */
 }
 
 .text-stage3 {
@@ -204,13 +210,3 @@
     text-align: justify;
     max-width: 1000px;
 }
-/* .jimmy-neutron:after {
-    content: "";
-    display: inline-block;
-    height: 2px;
-    vertical-align: bottom;
-    width: 10px;
-    margin-right: -100%;
-    margin-left: 10px;
-    border-top: 1px solid black;
-} */
