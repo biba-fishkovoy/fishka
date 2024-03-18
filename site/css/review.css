@@ -60,8 +60,8 @@
 
 .vertical-line1 {
     position: absolute;
-    top: 83%;
-   left: 27.48%;
+    top: 105%;
+   left: 21.78%;
     border: 1px solid #7c2127;
     height: 200px;
     width: 0px;
@@ -73,8 +73,8 @@
 
 .vertical-line2 {
     position: absolute;
-    top: 126%;
-   left: 27.48%;
+    top: 156%;
+   left: 21.78%;
     border: 1px solid #7c2127;
     height: 200px;
     width: 0px;
@@ -173,6 +173,7 @@
     justify-content: space-between;
     align-items: normal;
     margin-left: 55px;
+    flex-wrap: wrap;
 
 }
 
